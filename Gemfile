@@ -18,6 +18,11 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 
 gem 'rails_admin', '~> 0.6.6'
+gem 'active_model_serializers'
+gem 'grape'
+gem 'grape-active_model_serializers'
+gem 'grape-swagger-rails'
+gem 'rack-cors', require: 'rack/cors'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
