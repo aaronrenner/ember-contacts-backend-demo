@@ -19,9 +19,9 @@ gem 'jquery-rails'
 
 gem 'rails_admin', '~> 0.6.6'
 gem 'active_model_serializers'
-gem 'grape'
+gem 'grape', '~> 0.9.0'
 gem 'grape-active_model_serializers'
-gem 'grape-swagger-rails', github: 'BrandyMint/grape-swagger-rails'
+gem 'grape-swagger-rails'
 gem 'rack-cors', require: 'rack/cors'
 
 # Use ActiveModel has_secure_password
