@@ -27,7 +27,7 @@ module API
           end
         end
         post "", root: :contacts do
-          Contact.create!(permitted_params)
+          Contact.create!(permitted_params[:contact])
         end
 
         desc "Update a contact's attributes"
@@ -46,6 +46,15 @@ module API
           contact
         end
 
+        desc "Delete a contact"
+        params do
+          requires :id, type: String, desc: "ID of the contact"
+        end
+        delete ":id", root: :contact do
+          contact = Contact.find(permitted_params[:id])
+          contact.destroy!
+          contact
+        end
       end
     end
   end

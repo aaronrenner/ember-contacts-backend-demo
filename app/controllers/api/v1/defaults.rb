@@ -11,7 +11,7 @@ module API
 
         helpers do
           def permitted_params
-            @permitted_aprams ||= declared(params, include_missing: false)
+            @permitted_params ||= declared(params, include_missing: false)
           end
 
           def logger
